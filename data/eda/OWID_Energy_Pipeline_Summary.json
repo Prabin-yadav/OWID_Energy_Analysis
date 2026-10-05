@@ -1,0 +1,34 @@
+{
+  "input_file": "C:\\Users\\yadav\\Desktop\\SEM 7\\DS\\OWID_ENERGY\\data\\1_original-owid-energy-data.csv",
+  "input_rows": 23232,
+  "input_columns": 130,
+  "analysis_start_year": 2000,
+  "analysis_end_year": 2025,
+  "period_rows": 7491,
+  "final_rows": 4866,
+  "final_columns": 130,
+  "final_entities": 197,
+  "tableau_output": "C:\\Users\\yadav\\Desktop\\SEM 7\\DS\\OWID_ENERGY\\data\\processed\\1.owid-energy-data.csv",
+  "audit_output": "C:\\Users\\yadav\\Desktop\\SEM 7\\DS\\OWID_ENERGY\\data\\eda\\OWID_Energy_Cleaning_Audit.csv",
+  "missing_value_report": "C:\\Users\\yadav\\Desktop\\SEM 7\\DS\\OWID_ENERGY\\data\\eda\\OWID_Energy_Missing_Values.csv",
+  "entity_coverage_report": "C:\\Users\\yadav\\Desktop\\SEM 7\\DS\\OWID_ENERGY\\data\\eda\\OWID_Energy_Entity_Coverage.csv",
+  "deterministic_repairs_total": 3804,
+  "repair_counts_by_field": {
+    "biofuel_share_energy": 557,
+    "electricity_share_energy": 2642,
+    "nuclear_share_energy": 605
+  },
+  "cleaning_policy": {
+    "blank_numeric_tokens_to_null": true,
+    "negative_physical_values": "validated; invalid negatives blanked, legitimate change/net-import negatives retained",
+    "shares": "validated to 0-100 where defined",
+    "missing_values": "not blanket-filled; only exact derivations are filled",
+    "statistical_imputation": false,
+    "zero_fill": false,
+    "source_files_used_as_inputs": [
+      "1_original-owid-energy-data.csv"
+    ],
+    "old_filtered_csv_used": false,
+    "tableau_export_used": false
+  }
+}

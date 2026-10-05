@@ -1,0 +1,10 @@
+﻿stage,metric,count,details
+schema_validation,source_schema,130,130-column OWID source schema verified.
+input,raw_rows,23232,Rows loaded directly from the single specified raw OWID CSV.
+row_scope,year_filter,7491,Kept years 2000 through 2025 inclusive.
+row_scope,project_entity_scope,4866,"Kept ISO-coded analytical entities, excluded the documented territory set, and retained Kosovo as the workbook's ISO-less exception."
+key_validation,duplicate_country_year,0,Exactly one analytical record per Country-Year is required by the Tableau workbook.
+range_validation,share_out_of_range,1219,Electricity/energy shares outside 0–100% were treated as invalid and blanked.
+final_validation,final_rows,4866,Validated Tableau-ready row count.
+final_validation,final_entities,197,Validated analytical entity count.
+repair_summary,deterministic_repairs_total,3804,Missing derived fields filled only from exact source relationships or year-over-year source history.
